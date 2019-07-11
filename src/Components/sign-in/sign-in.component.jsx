@@ -46,18 +46,20 @@ export default class SignIn extends Component {
 				<form onSubmit={this.handleSubmit}>
 					<FormInput
 						type="email"
+						autoComplete="email"
 						handleChange={this.handleChange}
 						value={this.state.email}
 						name="email"
-						label="email"
+						label="Email"
 						required
 					/>
 					<FormInput
 						type="password"
+						autoComplete="current-password"
 						value={this.state.password}
 						handleChange={this.handleChange}
 						name="password"
-						label="password"
+						label="Password"
 						required
 					/>
 					<div className="buttons">

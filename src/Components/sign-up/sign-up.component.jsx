@@ -60,6 +60,7 @@ export default class SignUp extends Component {
 				<form className="sign-up-form" onSubmit={this.handleSubmit}>
 					<FormInput
 						type="text"
+						autoComplete="username"
 						name="displayName"
 						value={displayName}
 						onChange={this.handleChange}
@@ -68,6 +69,7 @@ export default class SignUp extends Component {
 					/>
 					<FormInput
 						type="email"
+						autoComplete="email"
 						name="email"
 						value={email}
 						onChange={this.handleChange}
@@ -76,6 +78,7 @@ export default class SignUp extends Component {
 					/>
 					<FormInput
 						type="password"
+						autoComplete="new-password"
 						name="password"
 						value={password}
 						onChange={this.handleChange}
@@ -84,6 +87,7 @@ export default class SignUp extends Component {
 					/>
 					<FormInput
 						type="password"
+						autoComplete="new-password"
 						name="confirmPassword"
 						value={confirmPassword}
 						onChange={this.handleChange}
